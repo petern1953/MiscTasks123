@@ -9,11 +9,9 @@
 const HU = {
     date(dateInput) { return new Intl.DateTimeFormat('hu-HU').format(dateInput) },
     currency(valueInput) { return (new Intl.NumberFormat('hu-HU', { style: 'currency', currency: 'HUF' })).format(valueInput) },
-    list() {
-
-    }
+    list(strArr) { return `${strArr[0]}, ${strArr[1]} és ${strArr[2]}` }
 }
 
-const now = new Date();
-console.log(HU.date(now));
+console.log(HU.date(new Date()));
 console.log(HU.currency(100200400.59));
+console.log(HU.list(['Athos', 'Porthos', 'Aramis']));
