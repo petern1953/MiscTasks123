@@ -9,7 +9,7 @@
 
 // A fenti metódusok értelemszerűen nem másra szolgálnak, mint az egyik összetett adattípusból
 // konvertálják át az adatokat egy másikba.
-// Mindegyik metódus visszatérési értéke egy új Array, Map, vagy Set object.
+// Mindegyik metódus visszatérési értéke egy új Array, Map vagy Set object.
 
 'use strict'
 
